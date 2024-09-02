@@ -1,3 +1,34 @@
-<resources>
+<resouces>
     <string name="app_name">AppMicael</string>
-</resources>
+
+    <string name="oque">A mpox é uma doença causada pelo mpox vírus (MPXV),&#10;
+        do gênero Orthopoxvirus e família Poxviridae.&#10; Trata-se de uma doença zoonótica viral,&#10;
+        em que sua transmissão para humanos pode ocorrer por meio do contato com:&#10;&#10;
+        - Pessoa infectada pelo mpox vírus&#10;
+        - Materiais contaminados com o vírus&#10;
+        - Animais silvestres (roedores) infectados
+    </string>
+
+    <string name="sintomas">
+        O intervalo de tempo entre o primeiro contato com o vírus até&#10;
+        o início dos sinais e sintomas da mpox (período de incubação)&#10;
+        é tipicamente de 3 a 16 dias, mas pode chegar a 21 dias.&#10;
+        Após a manifestação de sintomas como erupções na pele, o período&#10;
+        em que as crostas desaparecem, a pessoa doente deixa de transmitir&#10;
+        o vírus a outras pessoas. As erupções na pele geralmente começam&#10;
+        dentro de um a três dias após o início da febre, mas às vezes,&#10;
+        podem aparecer antes da febre.&#10;
+    </string>
+
+    <string name="diagnostico">
+        O diagnóstico da mpox é realizado de forma laboratorial,&#10;
+        por teste molecular ou sequenciamento genético. O teste&#10;
+        para diagnóstico laboratorial será realizado em todos os&#10;
+        pacientes com suspeita da doença. A amostra a ser analisada&#10;
+        será coletada, preferencialmente, da secreção das lesões.&#10;
+        Quando as lesões já estão secas, o material encaminhado são&#10;
+        as crostas das lesões. As amostras estão sendo direcionadas&#10;
+        para os laboratórios de referência no Brasil.&#10;
+    </string>
+
+</resouces>

@@ -1,38 +1,35 @@
 package com.example.appmicael
 
-import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.appmicael.databinding.ActivityMainBinding
+import com.example.appmicael.databinding.ActivityIntroBinding
 
-class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+class Intro : AppCompatActivity() {
+    lateinit var binding: ActivityIntroBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
         // Configuração do View Binding
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityIntroBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Ajuste de padding para system bars
+        val button = binding.btnIntro
+        button.setOnClickListener {
+            // Cria uma intenção para iniciar a HomeActivity
+            val intent = Intent(this, Home::class.java)
+            startActivity(intent)
+            finish()
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        // Handler para atrasar a mudança de atividade
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, Intro::class.java)
-            startActivity(intent)
-            finish()
-        }, 5000)
     }
 }
