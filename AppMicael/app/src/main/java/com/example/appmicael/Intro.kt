@@ -1,5 +1,6 @@
 package com.example.appmicael
 
+import android.content.Intent  // Adicione esta importação
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
