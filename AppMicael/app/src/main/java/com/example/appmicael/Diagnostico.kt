@@ -13,6 +13,6 @@ class Diagnostico : AppCompatActivity() {
         setContentView(R.layout.activity_diagnostico)
 
 
-        
+
     }
 }

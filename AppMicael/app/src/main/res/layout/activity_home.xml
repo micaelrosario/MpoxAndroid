@@ -11,7 +11,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:background="@color/verde_blue">
+                android:background="@color/material_dynamic_primary50">
 
                 <!-- Imagem do Ícone -->
                 <ImageView
@@ -64,11 +64,10 @@
         <!-- Container Fixo na Parte Inferior -->
         <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@color/verde_blue"
+                android:layout_height="wrap_content"
+                android:background="@color/material_dynamic_primary50"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="82dp">
 
                 <!-- Ícone de Perfil -->

@@ -19,8 +19,8 @@ class Home : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val img = binding.mpox
-        img.setOnClickListener {
+        val pageMpox = binding.mpox
+        pageMpox.setOnClickListener {
             // Cria uma intenção para iniciar a HomeActivity
             val intent = Intent(this, ContentMpox::class.java)
             startActivity(intent)
