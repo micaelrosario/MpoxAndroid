@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <!-- Container Superior - Informações do Desenvolvedor -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.0"
+                android:orientation="vertical"
+                android:background="@color/blue_100"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <!-- Linha com a Seta de Retorno e o Título -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="10dp">
+
+                        <!-- Imagem de Retornar -->
+                        <ImageView
+                                android:id="@+id/retornar"
+                                android:layout_width="44dp"
+                                android:layout_height="44dp"
+                                android:contentDescription="Imagem de seta retornar"
+                                android:src="@drawable/setablue"
+                                android:layout_marginEnd="16dp"
+                                />
+
+                        <!-- Título do Desenvolvedor -->
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sobre o Desenvolvedor"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginTop="20dp"/>
+
+                </LinearLayout>
+
+                <!-- Imagem do Desenvolvedor -->
+                <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:src="@drawable/perfil_2"
+                        android:contentDescription="Imagem do Desenvolvedor"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp" />
+
+                <!-- Informações do Desenvolvedor -->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Micael Santos Do Rosário"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginBottom="4dp"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="E-mail: 202216360004@ifba.edu.br"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginBottom="4dp" />
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Telefone: (73) 998175189"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginBottom="10dp" />
+
+                <!-- Informações Adicionais -->
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.3"
+                        android:orientation="vertical"
+                        android:gravity="left"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="10dp">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Data de Criação: Setembro de 2024"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginBottom="8dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Professor Orientador: Matuzalém Guimaraes Leal"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginBottom="8dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Curso: Análise e Desenvolvimento de Sistemas"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white"
+                                android:layout_marginBottom="8dp" />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ferramentas Usadas: Android Studio, Kotlin, Intellij e Figma"
+                                android:textSize="14sp"
+                                android:textColor="@android:color/white" />
+                </LinearLayout>
+        </LinearLayout>
+
+        <!-- Container Inferior - Objetivo do App e Informações Adicionais -->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                android:padding="16dp">
+
+                <!-- Título Objetivo do App -->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Objetivo do App"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"
+                        android:textColor="@android:color/black" />
+
+                <!-- Descrição do Objetivo -->
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Este aplicativo foi desenvolvido para fornecer suporte ao profissional de saúde da atenção básica e à população em geral, com foco em informações sobre Mpox, autoavaliação e locais de atendimento."
+                        android:textSize="17sp"
+                        android:layout_marginBottom="66dp"
+                        android:textColor="@android:color/black" />
+
+        </LinearLayout>
+</LinearLayout>

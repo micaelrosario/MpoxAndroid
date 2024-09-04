@@ -6,21 +6,22 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.appmicael.databinding.ActivitySintomasBinding
+import com.example.appmicael.databinding.ActivitySobreBinding
 
-class Sintomas : AppCompatActivity() {
-    lateinit var binding: ActivitySintomasBinding
+class Sobre : AppCompatActivity() {
+    lateinit var binding: ActivitySobreBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        binding = ActivitySintomasBinding.inflate(layoutInflater)
+        binding = ActivitySobreBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val voltarDiag = binding.retornar
-        voltarDiag.setOnClickListener {
+        val voltarHome = binding.retornar
+        voltarHome.setOnClickListener {
             // Cria uma intenção para iniciar a HomeActivity
-            val intent = Intent(this, Diagnostico::class.java)
+            val intent = Intent(this, Home::class.java)
             startActivity(intent)
             finish()
         }

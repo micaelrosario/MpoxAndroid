@@ -6,6 +6,91 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="16dp"
         tools:context=".Diagnostico">
 
+    <!-- Imagem de Retornar -->
+    <ImageView
+            android:id="@+id/retornar"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:contentDescription="Imagem de seta retornar"
+            app:srcCompat="@drawable/setablue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+    <!-- Imagem -->
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/woman"
+            android:contentDescription="mulher cientista"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"/>
+
+    <!-- Texto do Diagnóstico -->
+    <TextView
+            android:id="@+id/text_diagnostico"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="O diagnóstico da mpox é realizado de forma laboratorial, por teste molecular ou sequenciamento genético.
+                O teste para diagnóstico laboratorial será realizado em todos os pacientes com suspeita da doença."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="16dp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+
+    <!-- Botão para acessar o vídeo -->
+    <Button
+            android:id="@+id/button_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acessar Vídeo"
+            app:layout_constraintTop_toBottomOf="@id/video"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/red"
+            android:onClick="openVideo" />
+
+    <!-- Imagem do vídeo -->
+    <ImageView
+            android:id="@+id/video"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/video"
+            android:contentDescription="Imagem referente ao video do youtube"
+            app:layout_constraintTop_toBottomOf="@id/text_diagnostico"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="10dp"
+            android:onClick="openVideo"/>
+
+    <!-- Botão Próximo -->
+    <Button
+            android:id="@+id/btn_proximo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="NEXT"
+            android:backgroundTint="@color/material_dynamic_primary50"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="32dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

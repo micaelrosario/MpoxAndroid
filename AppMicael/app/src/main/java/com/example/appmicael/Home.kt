@@ -19,7 +19,7 @@ class Home : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val pageMpox = binding.mpox
+        val pageMpox = binding.imgMpox
         pageMpox.setOnClickListener {
             // Cria uma intenção para iniciar a HomeActivity
             val intent = Intent(this, ContentMpox::class.java)
@@ -27,6 +27,13 @@ class Home : AppCompatActivity() {
             finish()
         }
 
+        val perfil = binding.icProfile
+        perfil.setOnClickListener {
+            // Cria uma intenção para iniciar a HomeActivity
+            val intent = Intent(this, Sobre::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 }

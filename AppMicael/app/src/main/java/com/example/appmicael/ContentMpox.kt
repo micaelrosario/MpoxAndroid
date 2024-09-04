@@ -25,5 +25,12 @@ class ContentMpox : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val nextBtn = binding.btnProximo
+        nextBtn.setOnClickListener {
+            // Cria uma intenção para iniciar a HomeActivity
+            val intent = Intent(this, Diagnostico::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 }

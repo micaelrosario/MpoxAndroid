@@ -8,4 +8,202 @@
         android:layout_height="match_parent"
         tools:context=".Sintomas">
 
+    <!-- Imagem de Retornar -->
+    <ImageView
+            android:id="@+id/retornar"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:contentDescription="Imagem de seta retornar"
+            app:srcCompat="@drawable/setablue"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="26dp" />
+
+    <!-- Título -->
+    <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sintomas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="56dp" />
+
+
+    <!-- GridLayout para Sintomas -->
+    <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:columnOrderPreserved="false"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:padding="4dp"
+            android:layout_marginBottom="10dp"
+            >
+
+        <!-- Primeiro Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center"
+                >
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/lesoes"
+                    android:contentDescription="Sintoma 1"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lesões de pele"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Segundo Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/febre"
+                    android:contentDescription="Sintoma 2"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Febre"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Terceiro Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dordecabeca"
+                    android:contentDescription="Sintoma 3"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dor de cabeça"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Quarto Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/dor_corpo"
+                    android:contentDescription="Sintoma 4"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dores no corpo"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Quinto Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/calafrio"
+                    android:contentDescription="Sintoma 5"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calafrio"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <!-- Sexto Sintoma -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:padding="8dp"
+                android:gravity="center">
+
+            <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/fraqueza"
+                    android:contentDescription="Sintoma 6"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fraqueza"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+    </GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
